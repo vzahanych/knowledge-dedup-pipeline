@@ -1,0 +1,10 @@
+syntax = "proto3";
+package model;
+
+message ChunkSignature {
+  bytes minhash = 1;
+  uint64 simhash = 2;
+  repeated float featurevec = 3;
+  uint32 object_id = 4;
+  uint32 chunk_idx = 5;
+}
